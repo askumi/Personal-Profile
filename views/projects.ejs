@@ -1,0 +1,11 @@
+<% include partials/header.ejs %>
+
+<h1><%= title %></h1>
+<ul>
+	<p>Here are a few things I have done before</p>
+	<%for(var i=0; i < content.length; i++){%>
+		<li><%=content[i]%></li>
+	<%}%>
+</ul>
+	
+<% include partials/footer.ejs %>
